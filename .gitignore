@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Local tooling
+.omc/
+.claude/settings.local.json
+
+# OS clutter
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
