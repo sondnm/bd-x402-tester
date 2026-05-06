@@ -9,6 +9,10 @@ An interactive terminal UI for exploring Birdeye's x402-protected DeFi API endpo
 - Auto-handles x402 payment flow (402 → sign → retry) using your Solana wallet
 - Prints the full response and a ready-to-use `curl` command with the payment signature
 
+## Requirements
+
+- Node.js >= 20
+
 ## Setup
 
 ```bash
