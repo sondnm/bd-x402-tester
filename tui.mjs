@@ -10,7 +10,7 @@ import { base58 } from "@scure/base";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
-const BASE_URL = "http://public-api.birdeye.so";
+const BASE_URL = process.env.BASE_URL || "https://public-api.birdeye.so";
 const SEPARATOR = "━".repeat(50);
 
 // ─── Endpoint definitions ────────────────────────────────────────────────────
