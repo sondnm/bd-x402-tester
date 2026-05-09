@@ -374,6 +374,34 @@ const ENDPOINTS = [
     { name: "offset", in: "query", required: false },
     { name: "limit", in: "query", required: false },
   ]},
+  { method: "GET", path: "/x402/token/v1/holder-profile", params: [
+    { name: "x-chain", in: "header", required: false },
+    { name: "token_address", in: "query", required: true },
+    { name: "interval", in: "query", required: false },
+    { name: "ui_amount_mode", in: "query", required: false },
+    { name: "include_zero_balance", in: "query", required: false },
+  ]},
+  { method: "GET", path: "/x402/token/v1/holder-positions", params: [
+    { name: "x-chain", in: "header", required: false },
+    { name: "token_address", in: "query", required: true },
+    { name: "labels", in: "query", required: false },
+    { name: "sort_by", in: "query", required: false },
+    { name: "order_type", in: "query", required: false },
+    { name: "ui_amount_mode", in: "query", required: false },
+    { name: "include_zero_balance", in: "query", required: false },
+    { name: "offset", in: "query", required: false },
+    { name: "limit", in: "query", required: false },
+  ]},
+  { method: "GET", path: "/x402/token/v1/holder/chart", params: [
+    { name: "x-chain", in: "header", required: false },
+    { name: "token_address", in: "query", required: true },
+    { name: "chart_type", in: "query", required: false },
+    { name: "mode", in: "query", required: false },
+    { name: "percent_mode", in: "query", required: false },
+    { name: "count", in: "query", required: false },
+    { name: "from", in: "query", required: false },
+    { name: "to", in: "query", required: false },
+  ]},
 ];
 
 // ─── Parameter defaults ──────────────────────────────────────────────────────
