@@ -422,7 +422,7 @@ function getParamDefaults() {
     time_to: String(now),
     tx_type: "swap",
     time_frame: "24h",
-    ui_amount_mode: "both",
+    ui_amount_mode: "raw",
     interval: "1d",
     keyword: "sol",
     address_type: "token",
